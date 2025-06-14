@@ -1,0 +1,7 @@
+int8 moving_goal
+geometry_msgs/PoseStamped goal_pose
+---
+string moving_result
+---
+string moving_feedback
+float32 progress_percent

@@ -1,0 +1,1 @@
+char hand_gesture_char
