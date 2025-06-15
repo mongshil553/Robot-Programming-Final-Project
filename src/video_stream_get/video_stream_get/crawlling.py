@@ -28,8 +28,6 @@ class crawller():
         else:
             print(f"Failed to connect. Status code: {response.status_code}")
 
-#url = 'http://172.30.1.9:8000/video_feed'  # Or whatever your full local URL is
-
 # Connect to the MJPEG stream
 
 if __name__ == '__main__':
