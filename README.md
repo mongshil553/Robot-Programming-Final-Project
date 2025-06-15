@@ -18,11 +18,15 @@ Home Assistant Robot via Sign Language Recognition
 
 ## Instruction
 
+- ChatGPT API Key
+    1. Obtain ChatGPT-API key from https://platform.openai.com/api-keys
+    2. Save the key as *DO_NOT_SHARE_OR_SHOW.txt* on the root folder of the project
+
 Execute these codes in order in shell to activate necessary nodes.
 
 - On TurtleBot:
     
-    ```powershell
+    ```bash
     source /opt/ros/humble/setup.bash
     source install/setup.bash
     
@@ -37,7 +41,7 @@ Execute these codes in order in shell to activate necessary nodes.
 
 - On PC with same ROS_DOMAIN_ID:
     
-    ```powershell
+    ```bash
     # Crawl Images streamed from TurtleBot
     ros2 run video_stream_get collector_node 
     # yolo inference node (box recognition -> action server)
@@ -57,19 +61,26 @@ Execute these codes in order in shell to activate necessary nodes.
     ```
     
 
-Available Commands:
-
-- 서보 모터
-
-```bash
-# close
-ros2 service call /team/servo/set std_srvs/srv/SetBool "{data: true}"
-# open
-ros2 service call /team/servo/set std_srvs/srv/SetBool "{data: false}"
-```
-
-```powershell
-ros2 run video_stream_get collector_node
-```
-
-- Video Image Crawling Node (COM)
+- Available Commands:
+    - 서보 모터
+        
+        ```bash
+        # close
+        ros2 service call /team/servo/set std_srvs/srv/SetBool "{data: true}"
+        # open
+        ros2 service call /team/servo/set std_srvs/srv/SetBool "{data: false}"
+        ```
+        
+    
+    - Execute Action ID (1: hello, 2: spin, 3: kitchen, 4: bedroom, 5: bathroom)
+        
+        ```bash
+        ros2 service call /team/hand_gesture/force_command rp_project_interfaces/srv/ForceCommand "{cmd: 3}"
+        ```
+        
+    
+    - Force Declare Sign Language String(connects to chagpt api)
+        
+        ```bash
+        ros2 service call /team/hand_gesture/force_string rp_project_interfaces/srv/ForceString "{mystr: 'hplllo'}"
+        ```
