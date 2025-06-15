@@ -3,6 +3,7 @@
 ### Disclaimer
 
 This is a project done in Robot Programming Class.
+Check the example_images/ and example_videos/
 
 ---
 
