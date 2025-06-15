@@ -2,8 +2,7 @@
 
 ### Disclaimer
 
-This is a project done in Robot Programming Class.
-Check the example_images/ and example_videos/
+This is a project done in Robot Programming Class. &nbsp; Check the example_images/ and example_videos/
 
 ---
 
@@ -23,7 +22,7 @@ Home Assistant Robot via Sign Language Recognition
     1. Obtain ChatGPT-API key from https://platform.openai.com/api-keys
     2. Save the key as *DO_NOT_SHARE_OR_SHOW.txt* on the root folder of the project
 
-Execute these codes in order in shell to activate necessary nodes.
+<br><br> Execute these codes in order in shell to activate necessary nodes. <br>
 
 - On TurtleBot:
     
@@ -39,6 +38,7 @@ Execute these codes in order in shell to activate necessary nodes.
     ros2 run do_actions servo_node
     ```
     
+<br>
 
 - On PC with same ROS_DOMAIN_ID:
     
@@ -62,8 +62,10 @@ Execute these codes in order in shell to activate necessary nodes.
     ```
     
 
+<br>
+
 - Available Commands:
-    - 서보 모터
+    - Servo Motor Control
         
         ```bash
         # close
@@ -85,3 +87,4 @@ Execute these codes in order in shell to activate necessary nodes.
         ```bash
         ros2 service call /team/hand_gesture/force_string rp_project_interfaces/srv/ForceString "{mystr: 'hplllo'}"
         ```
+        This means the sign language detected is 'hplllo' and hopefully the chatgpt corrects it to 'hello'
