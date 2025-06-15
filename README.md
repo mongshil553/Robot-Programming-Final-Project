@@ -2,7 +2,9 @@
 
 ### Disclaimer
 
-This is a project done in Robot Programming Class. &nbsp; Check the example_images/ and example_videos/
+Check example_images/ and example_videos/ for Sample Images <br>
+
+Check src/hand_gesture/hand_gesture/dataSet.txt for DataSet Used <br>
 
 ---
 
