@@ -45,8 +45,8 @@ class cmd_parser(Node):
 
     def call_bing_api(self, cmd):
         key = cmd
-        is_error, original, corrected = self.worker.run(key) #run gpt to get corrected text
-        #call bing api to correct key <- ex) hpllu -> hello
+        corrected = self.worker.run(key) #run gpt to get corrected text
+        #call gpt api to correct key <- ex) hpllu -> hello
         self.corrected_cmd = corrected
         self.get_logger().info("Corrected text: {0}".format(self.corrected_cmd))
                 
