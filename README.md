@@ -2,9 +2,11 @@
 
 ### Disclaimer
 
-Check example_images/ and example_videos/ for Sample Images <br>
+Check report/ for report file. <br>
 
-Check src/hand_gesture/hand_gesture/dataSet.txt for DataSet Used <br>
+Check example_images/ and example_videos/ for Sample Images. <br>
+
+Check src/hand_gesture/hand_gesture/dataSet.txt for DataSet Used. <br>
 
 ---
 
